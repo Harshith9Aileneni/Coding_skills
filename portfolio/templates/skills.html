@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySkills</title>
+  <style>
+    h1{
+    color : red;
+    font-size : 24px;
+    }.ski{
+    color : blue;
+      font-size : 20px;
+  </style>
+</head>
+<body>
+<h1>
+  this is an intro about my skills
+</h1>
+<ul>
+  {% for skill in skills%}
+  <li class="ski">{{skill}}</li>
+  {% endfor %}
+</ul>
+<a href="/">back to home</a>
+
+</body>
+</html>
