@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        CONTACTS
+    </title>
+    <style>
+        h1{
+        color: blue;
+        font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<h1>All saved contacts are right over here</h1>
+<label>Contacts</label>
+
+
+    <p>
+        Total no.of Contacts available {{ contacts|length }}
+    </p>
+    {% for contact in contacts %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+        <strong>NAME:</strong>{{contact.name}}<br>
+        <strong>EMAil:</strong>{{contact.email}}<br>
+        <strong>NUMBER:</strong>{{contact.number}}<br>
+        <strong>CREATED AT:</strong>{{contact.created_at}}<br>
+    </div>
+{% endfor %}
+<p>
+
+
+<a href="/contact/">Add more contacts</a>
+
+    </p>
+
+    <a href="/">Back to Home</a>
+
+
+
+
+</body>
+</html>
